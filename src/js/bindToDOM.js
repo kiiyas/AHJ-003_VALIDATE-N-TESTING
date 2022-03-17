@@ -12,6 +12,13 @@ export default class DOMStatusUP {
   }
 
   generateTooltip() {
+    if (this.validity === 'Карта валидна!') {
+      this.tooltip.classList.remove('forInvalid');
+      this.tooltip.classList.add('forValid');
+    } else {
+      this.tooltip.classList.remove('forValid');
+      this.tooltip.classList.add('forInvalid');
+    }
     this.tooltip.textContent = this.validity;
   }
 

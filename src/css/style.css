@@ -83,6 +83,14 @@ body {
     margin-top: 10px;
 }
 
+.forValid {
+    color: #278927;
+}
+
+.forInvalid {
+    color: #cb2121;
+}
+
 #control {
     display: inline;
     width: 300px;
