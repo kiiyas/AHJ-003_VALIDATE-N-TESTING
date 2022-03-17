@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {    
+    padding: 100px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    min-width: 50%;
+    max-width: 60%;    
+    background-color: #dcffdc;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.presentation {
+    margin-right: 20px;
+}
+
+.cardlist {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.cardlist li {
+    list-style-type: none;
+    display: block;
+    
+}
+
+.card {
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-size: cover;
+}
+
+.blur {
+    width: 60px;
+    height: 40px;
+    position: relative;
+}
+
+.blur:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: #5cb85c;
+    top: 45px;
+}
+
+.visa {
+    background-image: url('../img/visa.png');    
+}
+
+.master {
+    background-image: url('../img/mastercard.png');    
+}
+
+.amex {
+    background-image: url('../img/americanexpress.png');    
+}
+
+.discover {
+    background-image: url('../img/discover.png');    
+}
+
+.mir {
+    background-image: url('../img/mir.png');    
+}
+
+.tooltip {
+    margin-top: 10px;
+}
+
+#control {
+    display: inline;
+    width: 300px;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;    
+    border: 1px solid #ccc;
+    border-radius: 4px;       
+}
+
+#submitform {
+    height: 40px;  
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;   
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitform:hover {
+    background-color: #4aa44a;
+    border-color: #3d903d;
+}
